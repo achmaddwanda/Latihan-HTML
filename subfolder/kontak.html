@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title> Sekolah Koding </title>
-        <meta charset="UTF-8">
-    </head>
+ <head> 
+    <title> Sekolah Koding </title>
+     <meta charset="UTF-8">
+ </head>
 
-    <body> 
+  <body> 
       
-      </-- Menu Website -->
-      <div>
+   </-- Menu Website -->
+    <div>
 
-         <a href="../index.html">Home</a>
-         <a href="kontak.html">Kontak</a>
+     <a href="../index.html">Home</a>
+     <a href="kontak.html">Kontak</a>
 
-      </div>
+    </div>
 
 
-      </-- konten dari website -->
-      <div>
+    </-- konten dari website -->
+    <div>
          
 
-         <p>Kita akan <em>Belajar</em> cara memformat text pada <b>HTML</b> </p>
-      </div> 
+      <p>Kita akan <em>Belajar</em> cara memformat text pada <b>HTML</b> </p>
+    </div> 
 
-      <form>
-        <label for="">Nama</label>
-        <input type="text" placeholder="ID Password" value="Nama Anda"> 
-       <br>
-        <label for="">Pesan</label>
-        <textarea cols="100" rows="7"> Pesan Saya Adalah.. </textarea>
-      </form>
+    </!-- membuat form -->
+   <form>
+      <fieldset>
+        <legend>Nama Dan Pesan</legend>
+        <label for="nama_user">Nama</label>
+        <input type="text" placeholder="ID Password" value="Nama Anda" id="nama_user"> 
+        <br>
+        <label for="pesan_user">Pesan</label>
+        <textarea cols="100" rows="7" id="pesan_user"> Pesan Saya Adalah.. </textarea>
+      </fieldset>
+        <br>
+      <fieldset>
+        <legend>Pilih Hobi</legend>
+        <label>Pilih Salah Satu Hobi</label> <br>
+        <input type="checkbox" name="hobi_user" value="0"> Menggambar 
+        <input type="checkbox" name="hobi_user" value="1" checked> Memancing 
+        <input type="checkbox" name="hobi_user" value="2"> Menyanyi
+      </fieldset>
+        <br>
+      <fieldset>  
+        <legend>Pilih salah satu</legend>
+        <label>Pilihlah salah satu</label> <br>
+        <input type="radio" name="gender_user" value="0"> Laki-Laki 
+        <input type="radio" name="gender_user" value="1"> Perempuan   
+        <br>
+        <label>Pelajaran</label>
+        <select>
+         <optgroup label="Frontend">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+          </optgroup> 
+
+          <optgroup label="Backend">
+            <option value="js">JS</option>
+            <option value="database">Database</option>
+          </optgroup>
+        </select>
+      </fieldset>  
+        <br>
+        <input type="submit" value="Kirim Data"
+          
       
-      <br><br>
-      <table border="1">
-          <caption> Daftar Murid Almad </caption>
-          <tr>
-            <th>Nama Murid</th>
-            <th>Kota Asal</th>
-          </tr>
-          <tr>
-            <td>Eric</td>
-            <td>Bojong</td>
-          </tr>
-          <tr>
-            <td>Dafa</td>
-            <td>Pondok Rajeg</td>
-          </tr>
-      </table>
+      
+    </form>
+      
+    <br><br>
+    <table border="1">
+      <caption> Daftar Murid Almad </caption>
+      <tr>
+        <th>Nama Murid</th>
+        <th>Kota Asal</th>
+      </tr>
+      <tr>
+        <td>Eric</td>
+        <td>Bojong</td>
+      </tr>
+      <tr>
+        <td>Dafa</td>
+        <td>Pondok Rajeg</td>
+      </tr>
+    </table>
 
-      <ul>
-          <li>Eric</li>
-          <li>Dafa</li>
-      </ul>
+    <ul>
+      <li>Eric</li>
+      <li>Dafa</li>
+    </ul>
 
-      <ol>
-          <li>Eric</li>
-          <li>Dafa</li>
-      </ol>
+    <ol>
+      <li>Eric</li>
+      <li>Dafa</li>
+    </ol>
 
-      <dl>
-          <dt>Eric</dt>
-          <dd>User Pertama</dd>
-          <dt>Dafa</dt>
-          <dd>User Kedua</dd>
+    <dl>
+      <dt>Eric</dt>
+      <dd>User Pertama</dd>
+      <dt>Dafa</dt>
+      <dd>User Kedua</dd>
 
-      </dl>
-      <p> &copy; Almadinah </p>
-    </body>
+    </dl>
+    <p> &copy; Almadinah </p>
+  </body>
 </html>
