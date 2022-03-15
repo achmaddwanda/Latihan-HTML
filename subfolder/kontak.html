@@ -2,16 +2,24 @@
 <html>
  <head> 
     <title> Sekolah Koding </title>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+
  </head>
 
-  <body> 
+  </-- 1.inline: langsung pada tag 
+      2.internal: file html yang sama 
+      3.external: file css sendiri
+  -->
+
+
+  <body id="body_kontak"> 
       
    </-- Menu Website -->
     <div>
 
-     <a href="../index.html">Home</a>
-     <a href="kontak.html">Kontak</a>
+     <a href="../index.html" class="menu_kontak">Home</a>
+     <a href="kontak.html" class="menu_kontak">Kontak</a>
 
     </div>
 
@@ -48,8 +56,8 @@
         <input type="radio" name="gender_user" value="0"> Laki-Laki 
         <input type="radio" name="gender_user" value="1"> Perempuan   
         <br>
-        <label>Pelajaran</label>
-        <select>
+        <label for="test">Pelajaran</label>
+        <select id="test">
          <optgroup label="Frontend">
             <option value="html">HTML</option>
             <option value="css">CSS</option>
@@ -61,8 +69,8 @@
           </optgroup>
         </select>
       </fieldset>  
-        <br>
-        <input type="submit" value="Kirim Data"
+      <br>
+      <input type="submit" value="Kirim Data"
           
       
       
